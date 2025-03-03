@@ -43,22 +43,30 @@ s.n. dasgupta
 cat < file1
 ## OUTPUT
 
+![image](https://github.com/user-attachments/assets/09b41d7a-edd1-4eec-b3cd-0ade2a9fdec1)
 
 
 cat < file2
 ## OUTPUT
 
+![image](https://github.com/user-attachments/assets/31ed9fa8-3fa6-4d15-82a4-b02bfca61c17)
+
 
 # Comparing Files
 cmp file1 file2
 ## OUTPUT
- 
+
+ ![image](https://github.com/user-attachments/assets/0ebebf3d-906b-4775-a072-83cacb58007a)
+
 comm file1 file2
  ## OUTPUT
+ 
+![image](https://github.com/user-attachments/assets/76d75bba-551f-40c5-9fa7-811073a18cdb)
 
  
 diff file1 file2
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/9e854078-c5e5-4949-a89e-8a51f33e13b3)
 
 
 #Filters
@@ -82,17 +90,20 @@ cat > file22
 
 cut -c1-3 file11
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/464d7c75-f6e5-4840-ac79-f6bc399dc200)
 
 
 
 
 cut -d "|" -f 1 file22
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/24abbcbe-11c8-4e98-a91a-dea11c9815a7)
 
 
 
 cut -d "|" -f 2 file22
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/4479400d-8d4a-4b77-be02-447c27b3121a)
 
 
 cat < newfile 
@@ -107,11 +118,13 @@ hello world
  
 grep Hello newfile 
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/4150869d-32b6-48de-bacc-77d5cfc1a21e)
 
 
 
 grep hello newfile 
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/70587e31-0128-48d0-b829-0c35c550a9b9)
 
 
 
@@ -119,10 +132,12 @@ grep hello newfile
 grep -v hello newfile 
 ## OUTPUT
 
+![image](https://github.com/user-attachments/assets/86a11a6a-b5a5-4802-ba01-02afdb771168)
 
 
 cat newfile | grep -i "hello"
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/507fa04d-8498-40bc-abb0-e0998c3a1687)
 
 
 
@@ -130,12 +145,14 @@ cat newfile | grep -i "hello"
 cat newfile | grep -i -c "hello"
 ## OUTPUT
 
+![image](https://github.com/user-attachments/assets/30df34d6-cb01-4d80-9d8f-047699a3c69b)
 
 
 
 grep -R ubuntu /etc
 ## OUTPUT
 
+![image](https://github.com/user-attachments/assets/651509d7-e56c-443d-ac04-b187292117a6)
 
 
 grep -w -n world newfile   
