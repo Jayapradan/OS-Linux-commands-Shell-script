@@ -325,11 +325,13 @@ seq 10 | sed -n '4,6p'
 
 seq 10 | sed -n '2,~4p'
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/7275d3a5-3665-40db-aee6-01bec481a4fb)
 
 
 
 seq 3 | sed '2a hello'
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/7b98315a-5164-4de5-b8b6-d2d9bf747bd3)
 
 
 
