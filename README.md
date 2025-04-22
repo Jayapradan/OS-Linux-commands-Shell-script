@@ -337,14 +337,19 @@ seq 3 | sed '2a hello'
 
 seq 2 | sed '2i hello'
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/e82d1599-9277-4147-85a5-d4f069a60e1f)
 
 
 seq 10 | sed '2,9c hello'
 ## OUTPUT
 
+![image](https://github.com/user-attachments/assets/15e9dbe8-5ea3-4e0b-8071-f60a5cffa27b)
+
 
 sed -n '2,4{s/^/$/;p}' file23
 ## OUTPUT
+
+![image](https://github.com/user-attachments/assets/7f70aa72-a1f2-46fe-9c4c-194ada0848eb)
 
 
 
@@ -362,6 +367,7 @@ cat > file21
 ``` 
 sort file21
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/312bb2c5-50bc-40e5-ba7b-5f3aacff05c4)
 
 
 cat > file22
@@ -376,20 +382,22 @@ cat > file22
 uniq file22
 ## OUTPUT
 
+![image](https://github.com/user-attachments/assets/dfc6d579-2743-46b0-8b6d-a620d04cd3da)
+
 
 
 #Using tr command
 
 cat file23 | tr [:lower:] [:upper:]
  ## OUTPUT
+ 
+![image](https://github.com/user-attachments/assets/93e1dbb5-54fb-49d9-9a59-5f49c1e1df42)
 
 cat < urllist.txt
 ```
-www. yahoo. com
-www. google. com
-www. mrcet.... com
+
 ^d
- ```
+ ```cat .
 cat > urllist.txt
 ```
 www. yahoo. com
@@ -399,11 +407,12 @@ www. mrcet.... com
 cat urllist.txt | tr -d ' '
  ## OUTPUT
 
+![image](https://github.com/user-attachments/assets/ac338f82-1e9a-499c-9465-2f91767a408c)
 
- 
 cat urllist.txt | tr -d ' ' | tr -s '.'
 ## OUTPUT
 
+![image](https://github.com/user-attachments/assets/9fe8f7af-2721-4e8e-b247-a6869b7a3642)
 
 
 #Backup commands
