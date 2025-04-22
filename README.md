@@ -407,12 +407,10 @@ www. mrcet.... com
 cat urllist.txt | tr -d ' '
  ## OUTPUT
 
-![image](https://github.com/user-attachments/assets/ac338f82-1e9a-499c-9465-2f91767a408c)
 
 cat urllist.txt | tr -d ' ' | tr -s '.'
 ## OUTPUT
 
-![image](https://github.com/user-attachments/assets/9fe8f7af-2721-4e8e-b247-a6869b7a3642)
 
 
 #Backup commands
