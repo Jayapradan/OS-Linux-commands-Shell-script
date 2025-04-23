@@ -403,19 +403,23 @@ cat > urllist.txt
 www. yahoo. com
 www. google. com
 www. mrcet.... com
- ```
+` ```
 cat urllist.txt | tr -d ' '
  ## OUTPUT
+![image](https://github.com/user-attachments/assets/feaed513-cf3f-4c5b-9c7d-d7998b93bc9e)
 
 
 cat urllist.txt | tr -d ' ' | tr -s '.'
 ## OUTPUT
 
+![image](https://github.com/user-attachments/assets/d30f89b9-e0eb-494e-8f96-34b530953bb0)
+
 
 
 #Backup commands
-tar -cvf backup.tar *
+tar -cvf backup.tar 
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/1232070c-1da1-4c1d-90dd-c58743e5d49c)
 
 
 mkdir backupdir
