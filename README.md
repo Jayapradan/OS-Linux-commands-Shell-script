@@ -1,4 +1,4 @@
-# OS-Linux-commands-Shell-scripting
+## OS-Linux-commands-Shell-scripting
 Operating systems Lab exercise
 # Linux commands-Shell scripting
 Linux commands-Shell scripting
@@ -429,17 +429,23 @@ mv backup.tar backupdir
 tar -tvf backup.tar
 ## OUTPUT
 
+![image](https://github.com/user-attachments/assets/1f3f4913-6d2a-4c6b-a7b3-3688d85c5b9f)
 
-tar -xvf backup.tar
+tar -xvf backupdir/backup.tar
 ## OUTPUT
+
+![Screenshot 2025-04-23 123657](https://github.com/user-attachments/assets/f27e75d9-b1bb-4ff8-a648-b1fe413f97c1)
 
 gzip backup.tar
 
-ls .gz
+ls .gzls
 ## OUTPUT
- 
+ ![image](https://github.com/user-attachments/assets/563dafeb-2ba6-4524-940d-192f289e8004)
+![image](https://github.com/user-attachments/assets/9bca3d75-b2bf-439b-8074-d441064b78d2)
+
 gunzip backup.tar.gz
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/3bf05c9b-73d3-485b-a857-4bd59f616e74)
 
  
 # Shell Script
@@ -450,6 +456,8 @@ echo 'echo Hello World‘; exit 0 >> my-script.sh
 chmod 755 my-script.sh
 ./my-script.sh
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/cbc43b4b-2e4a-4586-9b6d-f0ff7d0a172b)
+![image](https://github.com/user-attachments/assets/a681a854-f295-4fa6-be35-f696a84487ec)
 
  
 cat << stop > herecheck.txt
@@ -462,6 +470,8 @@ stop
 
 cat herecheck.txt
 ## OUTPUT
+
+![image](https://github.com/user-attachments/assets/355a3a24-554b-41fb-a5ef-77ee9fd4f4e0)
 
 
 cat < scriptest.sh 
@@ -500,24 +510,31 @@ chmod 777 scriptest.sh
 ./scriptest.sh 1 2 3
 
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/308ca26d-922c-4ba6-909e-08a652088709)
 
+![image](https://github.com/user-attachments/assets/3549beac-ecb6-48c6-b60d-91285a285e5d)
  
-ls file1
+ls file
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/53cb6f7f-81ea-478a-b707-a6ad66cc8892)
 
 echo $?
 ## OUTPUT 
+![image](https://github.com/user-attachments/assets/91fa8c03-3251-4c8e-a666-5f0102222d02)
+
 ./one
 bash: ./one: Permission denied
  
 echo $?
 ## OUTPUT 
- 
+ ![image](https://github.com/user-attachments/assets/eafee7b1-1431-4252-9cd7-b879c0666554)
+
 abcd
  
 echo $?
  ## OUTPUT
 
+![image](https://github.com/user-attachments/assets/0f744cb2-3598-48b6-a81e-b39fb1df2d1b)
 
  
 # mis-using string comparisons
@@ -548,14 +565,13 @@ else
 echo "$val1 is less than $val2"
 fi
 ```
-##OUTPUT
-
-
-
+## OUTPUT
 chmod 755 strcomp.sh
  
 ./strcomp.sh 
 ## OUTPUT
+
+![image](https://github.com/user-attachments/assets/06b5b5eb-345c-4b44-85c2-5d53240533f4)
 
 
 # check file ownership
@@ -583,6 +599,7 @@ fi
  ```
 ./psswdperm.sh
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/92dd8ad7-dbc5-4ee1-93dc-02e1504323fe)
 
 # check if with file location
 cat>ifnested.sh 
@@ -630,6 +647,8 @@ fi
 ./ifnested.sh 
 ## OUTPUT
 
+![image](https://github.com/user-attachments/assets/7bd0a1ad-f6f2-44eb-8785-7da2151f8b1f)
+
 
 
 # using numeric test comparisons
@@ -672,7 +691,9 @@ fi
 $ chmod 755 iftest.sh
  
 $ ./iftest.sh 
-##OUTPUT
+## OUTPUT
+
+![image](https://github.com/user-attachments/assets/135c1f8d-6a2e-4977-a73d-226705dd47b5)
 
 # check if a file
 cat > ifnested.sh 
@@ -721,7 +742,9 @@ fi
 $ chmod 755 ifnested.sh
  
 $ ./ifnested.sh 
-##OUTPUT
+## OUTPUT
+![image](https://github.com/user-attachments/assets/a87f763e-0f29-491b-a263-d40b34cb8384)
+
 
 # looking for a possible value using elif
 cat elifcheck.sh 
@@ -751,6 +774,8 @@ $ chmod 755 elifcheck.sh
 $ ./elifcheck.sh 
 ## OUTPUT
 
+![image](https://github.com/user-attachments/assets/0e7bffc1-f339-441e-8bc9-6be7792c6c0e)
+
 
 # testing compound comparisons
 cat> ifcompound.sh 
@@ -766,6 +791,7 @@ fi
 $ chmod 755 ifcompound.sh
 $ ./ifcompound.sh 
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/02eb2c24-5e9a-4b32-8224-d89a1eed9362)
 
 # using the case command
 cat >casecheck.sh 
@@ -784,8 +810,11 @@ esac
 ```
 $ chmod 755 casecheck.sh 
  
-$ ./casecheck.sh 
- 
+$ ./casecheck.sh
+## OUTPUT 
+
+ ![image](https://github.com/user-attachments/assets/881f86e3-2e0e-4eb2-9df3-eb2869b1676f)
+
 cat > whiletest
 ```bash
 #!/bin/bash
@@ -800,7 +829,9 @@ done
 $ chmod 755 whiletest.sh
  
 $ ./whiletest.sh
- 
+
+ ![image](https://github.com/user-attachments/assets/a68fc75c-e164-4f71-85a0-62b5501ea0c3)
+
  
 cat untiltest.sh 
 ```bash
@@ -814,7 +845,8 @@ done
 ``` 
 $ chmod 755 untiltest.sh
  
- 
+![image](https://github.com/user-attachments/assets/da9adf58-b76b-4230-81a5-ae19eaeffa4c)
+
  
 cat forin1.sh 
 ```bash
@@ -827,7 +859,8 @@ done
  ```
  
 $ chmod 755 forin1.sh
- 
+ ![image](https://github.com/user-attachments/assets/8170f796-b2be-4a6e-a85d-b744da80f215)
+
  
 cat forin2.sh 
 ```bash
@@ -840,7 +873,10 @@ done
  ```
  
 $ chmod 755 forin2.sh
- 
+
+## OUTPUT
+ ![image](https://github.com/user-attachments/assets/f7df1ee4-0708-429e-9f06-d116c1671203)
+
 cat forin2.sh 
 ```bash
 \#!/bin/bash
@@ -853,7 +889,9 @@ done
 $ chmod 755 forin2.sh
  
 $ ./forin2.sh 
- 
+## OUTPUT
+ ![image](https://github.com/user-attachments/assets/b20c134f-6e8f-4572-b44c-08d48ae0f2d2)
+
 cat forin3.sh 
 ```bash
 \#!/bin/bash
@@ -864,7 +902,11 @@ echo "word:$test"
 done
 ```
 $ ./forin3.sh 
- 
+
+## OUTPUT
+
+ ![image](https://github.com/user-attachments/assets/6baa875f-b6ec-4fde-8d45-98776e928e8c)
+
 cat forin1.sh 
 ```bash
 #!/bin/bash
@@ -877,6 +919,8 @@ done
 $ chmod 755 forin1.sh
 
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/4c27ab6c-f906-411b-acb9-444ad6203a64)
+
 cat forinfile.sh 
 ```bash
 #!/bin/bash
@@ -899,6 +943,8 @@ Khammam
 
 ## OUTPUT
 
+![image](https://github.com/user-attachments/assets/4fbf6517-6790-4aa0-9082-f64b2eb0aa82)
+
 
 cat forctype.sh 
 ```bash
@@ -912,6 +958,7 @@ done
 $ chmod 755 forctype.sh
 $ ./forctype.sh 
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/59830f13-2894-4070-8ceb-49302856a0d3)
 
 cat forctype1.sh 
 ```bash
@@ -925,6 +972,7 @@ done
 $ chmod 755 forctype.sh
 $ ./forctype1.sh 
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/9ebe58c6-5618-48e2-ab86-f585fbd8bb78)
 
 cat fornested1.sh 
 ```bash
@@ -943,8 +991,6 @@ $ chmod 755 fornested1.sh
  
 $ ./fornested1.sh 
  ## OUTPUT
-
- 
 cat forbreak.sh 
 ```bash
 #!/bin/bash
@@ -960,6 +1006,8 @@ done
 echo "The for loop is completed“
 ```
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/2ec8ec08-3db7-4315-8701-25df606472b5)
+
 
 $ chmod 755 forbreak.sh
  
@@ -985,7 +1033,8 @@ $ chmod 755 forcontinue.sh
  
 $ ./forcontinue.sh 
 ## OUTPUT
- 
+ ![image](https://github.com/user-attachments/assets/b86813b8-f850-4e70-9906-73bfbf1897d5)
+
 cat exread.sh 
 ```bash
 #!/bin/bash
@@ -999,6 +1048,7 @@ $ chmod 755 exread.sh
  
 $ ./exread.sh 
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/29e77150-b028-4800-a114-c7721bb99488)
 
 
  cat exread1.sh
@@ -1011,6 +1061,7 @@ echo "Hello $name, welcome to my program. “
 $ chmod 755 exread1.sh 
 
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/3236784c-88c9-4b8d-bf20-4f72371b4c64)
 
 
 
@@ -1033,9 +1084,8 @@ fi
 ```
 ## OUTPUT
  ./funcex.sh 
-
- 
  ./funcex.sh 1 2
+![image](https://github.com/user-attachments/assets/92e56c69-80be-4e67-a731-11d84d670cf2)
 
  
 cat argshift.sh
@@ -1050,7 +1100,8 @@ $ chmod 777 argshift.sh
 
 ## OUTPUT
 $ ./argshift.sh 1 2 3
- 
+ ![image](https://github.com/user-attachments/assets/6829e622-0140-4a35-98eb-3d3d94647c27)
+
  cat argshift1.sh
 ```bash
  #/bin/bash 
@@ -1067,7 +1118,8 @@ done
 $ chmod 777 argshift.sh
 ## OUTPUT
 $ ./argshift.sh 1 2 3
- 
+ ![image](https://github.com/user-attachments/assets/09fbdb61-929b-4237-b90f-ed2b8be9cae8)
+
 cat argshift.sh
 ```bash
 #!/bin/bash 
@@ -1080,6 +1132,8 @@ set +x
 ```
 ## OUTPUT
  ./argshift.sh 1 2 3
+![image](https://github.com/user-attachments/assets/d3cad86c-1c79-4355-8aa9-61188cd6b5b9)
+ 
  
  
 cat > nc.awk
@@ -1111,7 +1165,8 @@ ubcdfghj
 ```
 awk -f nc.awk data.dat
 ## OUTPUT 
- 
+ ![image](https://github.com/user-attachments/assets/54e9282f-4c0a-4c10-b4ae-386734d7fe39)
+
 cat > palindrome.sh
 ```bash
 #num=545
@@ -1138,6 +1193,7 @@ else
 fi
 ```
 ## OUTPUT 
+![image](https://github.com/user-attachments/assets/7445608c-f43e-416b-a7e2-1bf128170e2c)
 
 
 # RESULT:
